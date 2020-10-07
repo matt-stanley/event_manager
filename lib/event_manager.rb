@@ -1,4 +1,5 @@
 require 'csv'
+require 'google/apis/civicinfo_v2'
 
 root = '..'
 attendees = "#{root}/event_attendees.csv"

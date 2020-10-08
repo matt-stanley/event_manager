@@ -5,7 +5,7 @@ def validate_phone(phone)
   if phone.nil? || phone.length < 10 || phone.length > 11 || (phone.length == 11 && phone[0] != '1')
     'Invalid phone number'
   else
-    phone.slice(-10..)
+    phone.slice(-10..-1)
   end
 end
 
